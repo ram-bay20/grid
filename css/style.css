@@ -1,0 +1,106 @@
+.wrapper div{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: #bbb;
+}
+.wrapper div:nth-child(even){
+    background-color: #ddd;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 1em;
+}
+.container div{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: rgb(0, 1, 85);
+    color: #fff;
+
+}
+.container div:nth-child(odd){
+    background-color: rgb(167, 1, 1);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100,auto);
+    grid-gap: 1em;
+    margin-top: 30px;
+}
+.test div{
+    border: 1px solid black;
+    padding: 1em;
+    color: #fff;
+}
+.test div:nth-child(2){
+    background-color: rgb(160, 0, 160);
+}
+.test div:nth-child(6){
+    background-color: rgb(160, 0, 160);
+}
+.test div:nth-child(7){
+    background-color: rgb(160, 0, 160);
+}
+.test div:nth-child(3){
+    background-color: rgb(0, 94, 0);
+}
+.test div:nth-child(4){
+    background-color: rgb(0, 94, 0);
+}
+.test div:nth-child(8){
+    background-color: rgb(0, 94, 0);
+}
+.test{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 75px;
+    grid-gap: 1em;
+    
+}
+.area div{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: #0ff;
+    color: #000;
+}
+.area div:nth-child(odd){
+    background-color: #ff0;
+}
+.area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 1em;
+    justify-content: stretch;
+    align-items: stretch;
+    
+}
+.box1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.box2{
+    grid-column: 1/2;
+    grid-row: 2/5; 
+}
+.box3{
+    grid-column: 2/4;
+    grid-row: 2/5;
+}
+.box4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.box5{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.box6{
+    grid-column: 4;
+    grid-row: 4/5;
+}
+.box7{
+    grid-column: 1/5;
+    grid-row: 5;
+}
